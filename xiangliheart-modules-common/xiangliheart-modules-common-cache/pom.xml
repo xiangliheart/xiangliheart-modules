@@ -8,7 +8,7 @@
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <groupId>com.xianliheart.modules</groupId>
+    <groupId>com.xiangliheart.modules</groupId>
     <artifactId>xiangliheart-modules-common-cache</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>xiangliheart-modules-common-cache</name>
