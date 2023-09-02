@@ -1,0 +1,75 @@
+server:
+  port: 8011
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /xiangliheart/modules/service/workflow
+
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    name: druidDataSource
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/eob-platform-workflow?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=utf-8
+      username: root
+      password: 123456
+      filters: stat,wall,slf4j,config
+      max-active: 100
+      initial-size: 1
+      max-wait: 60000
+      min-idle: 1
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: select 'x'
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 50
+      max-pool-prepared-statement-per-connection-size: 20
+      filter:
+        commons-log:
+          data-source-log-enabled: true
+          statement-log-enabled: true
+          statement-executable-sql-log-enable: true
+        stat:
+          #开启sql统计
+          enabled: true
+          #使用的数据库类型
+          db-type: mysql
+          #是否打印慢查询sql脚本
+          log-slow-sql: true
+          #慢查询的时间，超过该时间才打印，单位毫秒
+          slow-sql-millis: 1000
+
+  # activiti的配置
+  activiti:
+    #1.flase：默认值。activiti在启动时，对比数据库表中保存的版本，如果没有表或者版本不匹配，将抛出异常
+    #2.true： activiti会对数据库中所有表进行更新操作。如果表不存在，则自动创建
+    #3.create_drop： 在activiti启动时创建表，在关闭时删除表（必须手动关闭引擎，才能删除表）
+    #4.drop-create： 在activiti启动时删除原来的旧表，然后在创建新表（不需要手动关闭引擎）
+    database-schema-update: true
+    # 检测历史表是否存在， Activiti7中默认是没有开启数据库历史记录的，启动数据库历史记录
+    db-history-used: true
+    #记录历史等级 可配置的历史级别有none, activity, audit, full
+    #none：不保存任何的历史数据，因此，在流程执行过程中，这是最高效的。
+    #activity：级别高于none，保存流程实例与流程行为，其他数据不保存。
+    #audit：除activity级别会保存的数据外，还会保存全部的流程任务及其属性。audit为history的默认值。
+    #full：保存历史数据的最高级别，除了会保存audit级别的数据外，还会保存其他全部流程相关的细节数据，包括一些流程参数等。
+    history-level: full
+    # 校验流程文件，默认校验resouces下的 process 文件夹里的流程文件
+    check-process-definitions: false
+
+knife4j-properties:
+  title: xiangliheart-modules-service-workflow
+  description: xiangliheart-modules-service-workflow
+  termsOfServiceUrl: www.xiangliheart.com/xiangliheart/modules/service/workflow
+  version: 1.0.0-SNAPSHOT
+  basePackage: com.xiangliheart.modules
+  groupName: 1.0.0-SNAPSHOT
+  name: xiangliheart(湘澧寸心)
+  url: www.xiangliheart.com
+  email: xiangliheart@hotmail.com
