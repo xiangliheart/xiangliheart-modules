@@ -7,7 +7,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.5</version>
-        <relativePath/>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.xiangliheart.modules</groupId>
     <artifactId>xiangliheart-modules-pom</artifactId>
@@ -79,7 +79,7 @@
             </dependency>
             <dependency>
                 <groupId>com.xiangliheart.modules</groupId>
-                <artifactId>xiangliheart-modules-common</artifactId>
+                <artifactId>xiangliheart-modules-frame</artifactId>
                 <version>${default-project.version}</version>
             </dependency>
             <dependency>
@@ -114,7 +114,12 @@
             </dependency>
             <dependency>
                 <groupId>com.xiangliheart.modules</groupId>
-                <artifactId>xiangliheart-modules-service-admin</artifactId>
+                <artifactId>xiangliheart-modules-admin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xiangliheart.modules</groupId>
+                <artifactId>xiangliheart-modules-backup</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

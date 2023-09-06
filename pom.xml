@@ -14,7 +14,9 @@
     <modules>
         <module>xiangliheart-modules-pom</module>
         <module>xiangliheart-modules-frame</module>
-        <module>xiangliheart-modules-service</module>
+        <module>xiangliheart-modules-admin</module>
+        <module>xiangliheart-modules-workflow</module>
+        <module>xiangliheart-modules-backup</module>
     </modules>
     <build>
         <plugins>
