@@ -7,7 +7,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.5</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath/>
     </parent>
     <groupId>com.xiangliheart.modules</groupId>
     <artifactId>xiangliheart-modules-pom</artifactId>
@@ -15,72 +15,72 @@
     <packaging>pom</packaging>
     <properties>
         <java.version>17</java.version>
-        <default-mysql.version>8.0.29</default-mysql.version>
-        <default-knife4j-spring-boot-starter.verion>3.0.3</default-knife4j-spring-boot-starter.verion>
-        <default-pagehelper-spring-boot-starter.verion>1.4.2</default-pagehelper-spring-boot-starter.verion>
-        <default-druid-spring-boot-starter.verion>1.2.11</default-druid-spring-boot-starter.verion>
-        <default-swagger-annotations.version>1.5.22</default-swagger-annotations.version>
-        <default-jjwt.version>0.9.1</default-jjwt.version>
-        <default-fastjson.version>2.0.8</default-fastjson.version>
-        <default-poi-ooxml.version>5.2.2</default-poi-ooxml.version>
-        <default-project.version>1.0.0-SNAPSHOT</default-project.version>
-        <default-kaptcha.version>0.0.9</default-kaptcha.version>
-        <default-activiti-spring-boot-starter.version>7.0.0.GA</default-activiti-spring-boot-starter.version>
-        <default-slf4j-simple.version>1.7.36</default-slf4j-simple.version>
-        <default-mapstruct.version>1.5.2.Final</default-mapstruct.version>
-        <default-mapper-spring-boot-starter.version>4.2.1</default-mapper-spring-boot-starter.version>
+        <mysql.version>8.0.29</mysql.version>
+        <knife4j-spring-boot-starter.verion>3.0.3</knife4j-spring-boot-starter.verion>
+        <pagehelper-spring-boot-starter.verion>1.4.2</pagehelper-spring-boot-starter.verion>
+        <druid-spring-boot-starter.verion>1.2.11</druid-spring-boot-starter.verion>
+        <swagger-annotations.version>1.5.22</swagger-annotations.version>
+        <jjwt.version>0.9.1</jjwt.version>
+        <fastjson.version>2.0.8</fastjson.version>
+        <poi-ooxml.version>5.2.2</poi-ooxml.version>
+        <project.version>1.0.0-SNAPSHOT</project.version>
+        <kaptcha.version>0.0.9</kaptcha.version>
+        <activiti-spring-boot-starter.version>7.0.0.GA</activiti-spring-boot-starter.version>
+        <slf4j-simple.version>1.7.36</slf4j-simple.version>
+        <mapstruct.version>1.5.2.Final</mapstruct.version>
+        <mapper-spring-boot-starter.version>4.2.1</mapper-spring-boot-starter.version>
     </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>${default-mysql.version}</version>
+                <version>${mysql.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
-                <version>${default-pagehelper-spring-boot-starter.verion}</version>
+                <version>${pagehelper-spring-boot-starter.verion}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
-                <version>${default-knife4j-spring-boot-starter.verion}</version>
+                <version>${knife4j-spring-boot-starter.verion}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${default-druid-spring-boot-starter.verion}</version>
+                <version>${druid-spring-boot-starter.verion}</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-annotations</artifactId>
-                <version>${default-swagger-annotations.version}</version>
+                <version>${swagger-annotations.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
-                <version>${default-jjwt.version}</version>
+                <version>${jjwt.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>${default-fastjson.version}</version>
+                <version>${fastjson.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
-                <version>${default-poi-ooxml.version}</version>
+                <version>${poi-ooxml.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.axet</groupId>
                 <artifactId>kaptcha</artifactId>
-                <version>${default-kaptcha.version}</version>
+                <version>${kaptcha.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.xiangliheart.modules</groupId>
                 <artifactId>xiangliheart-modules-frame</artifactId>
-                <version>${default-project.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.xiangliheart.modules</groupId>
@@ -125,22 +125,22 @@
             <dependency>
                 <groupId>org.activiti</groupId>
                 <artifactId>activiti-spring-boot-starter</artifactId>
-                <version>${default-activiti-spring-boot-starter.version}</version>
+                <version>${activiti-spring-boot-starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-simple</artifactId>
-                <version>${default-slf4j-simple.version}</version>
+                <version>${slf4j-simple.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct</artifactId>
-                <version>${default-mapstruct.version}</version>
+                <version>${mapstruct.version}</version>
             </dependency>
             <dependency>
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper-spring-boot-starter</artifactId>
-                <version>${default-mapper-spring-boot-starter.version}</version>
+                <version>${mapper-spring-boot-starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -6,12 +6,13 @@
         <groupId>com.xiangliheart.modules</groupId>
         <artifactId>xiangliheart-modules-frame</artifactId>
         <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.xiangliheart.modules</groupId>
     <artifactId>xiangliheart-modules-frame-swagger</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>xiangliheart-modules-frame-swagger</name>
-    <description>xiangliheart-frame-common-swagger</description>
+    <description>xiangliheart-frame-frame-swagger</description>
     <dependencies>
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
